@@ -1,12 +1,10 @@
 import Foundation
 import ImageOps
 
-// let compressor = tjInitCompress()
-
 func test() {
    print("Hello, World!")
 
-   let path = "/Users/snehkoul/Downloads/tigers.jpg"
+   let path = "/Users/ayushitiwari/Downloads/tiger.jpg"
    let url = (path as NSString).utf8String
    let _ = UnsafeMutablePointer<Int8>(mutating: url)!
 
