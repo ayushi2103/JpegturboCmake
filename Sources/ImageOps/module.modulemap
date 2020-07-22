@@ -1,4 +1,0 @@
-module ImageOps {
-  header "ImageOps.h"
-  export *
-}

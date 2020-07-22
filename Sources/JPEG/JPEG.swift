@@ -1,5 +1,5 @@
 import Foundation
-import ImageOps
+import HelloWorldCore
 
 func test() {
    print("Hello, World!")
