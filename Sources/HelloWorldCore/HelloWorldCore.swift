@@ -59,5 +59,3 @@ public func tjJPEGSaveImage(filename: UnsafePointer<Int8>?, buffer: UnsafePointe
     return retVal;
     
 }
-
-
