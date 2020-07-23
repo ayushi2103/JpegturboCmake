@@ -1,25 +1,20 @@
 
-add_library(HelloWorldCore 
+add_library(ImageOps 
   SHARED
-  HelloWorldCore.swift)
+  ImageOps.swift)
 
-
-
-
-set_target_properties(HelloWorldCore PROPERTIES
+set_target_properties(ImageOps PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES ${CMAKE_Swift_MODULE_DIRECTORY})
 
-target_include_directories(HelloWorldCore PUBLIC
+target_include_directories(ImageOps PUBLIC
   ${CMAKE_CURRENT_SOURCE_DIR}
   ${SOURCE_DIR}
    ${BINARY_DIR})
    
-target_link_libraries(HelloWorldCore 
+target_link_libraries(ImageOps 
 turbojpeg)
 
-
-
-install(TARGETS HelloWorldCore
+install(TARGETS ImageOps
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION bin

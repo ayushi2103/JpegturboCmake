@@ -1,20 +1,20 @@
 import Foundation
-import HelloWorldCore
+import ImageOps
 
 let numScalingFactors = 0;
 
 let path = "/Users/ayushitiwari/Downloads/Dog.jpg"
 let url = (path as NSString).utf8String
 let filenamepointer = UnsafeMutablePointer<Int8>(mutating: url)!
- 
-func () {
 
+func testing() {
+    
     var width: Int32 = 0
     var align: Int32 = 0
     var height: Int32 = 0
     var pixelFormat: Int32 = 0
     let inSubsamp: Int32 = 0
-
+    
     let imgBuffer = tjJPEGLoadCompressedImage(filename: filenamepointer, width: &width, align: &align, height: &height, pixelFormat: &pixelFormat, inSubsamp: inSubsamp, flags: 0)
     print(width)
     print(align)
@@ -30,4 +30,4 @@ func () {
     print(retVal)
 }
 
-main()
+testing()
