@@ -9,7 +9,7 @@ set_target_properties(ImageOps PROPERTIES
 target_include_directories(ImageOps PUBLIC
   ${CMAKE_CURRENT_SOURCE_DIR}
   ${SOURCE_DIR}
-   ${BINARY_DIR})
+  ${BINARY_DIR})
    
 target_link_libraries(ImageOps 
 turbojpeg)
